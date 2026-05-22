@@ -42,6 +42,11 @@ A bioinformatics pipeline for viral discovery in metagenomic sequencing data. It
 - `assembly/` — SPAdes assemblies per virus and dark matter
 - `assembly_qc/*/coverage.txt` — Genome coverage per assembled virus
 - `assembly_qc/*/consensus.fasta` — Consensus genome sequences
+- `diversity_results/layer1_alpha_diversity.csv` — Alpha diversity metrics for Layer 1
+- `diversity_results/layer2_alpha_diversity.csv` — Alpha diversity metrics for Layer 2
+- `diversity_results/virome_composition_3layers.pdf` — Proportional bar chart of all layers
+- `diversity_results/beta_bray_curtis.csv` — Bray-Curtis dissimilarity matrix (≥2 samples)
+- `diversity_results/beta_pcoa_bray_curtis.pdf` — PCoA ordination plot (≥2 samples)
 
 ### Scripts
 
@@ -51,6 +56,7 @@ A bioinformatics pipeline for viral discovery in metagenomic sequencing data. It
 | `01_download_databases.sh` | Downloads and indexes all reference databases |
 | `02_virome_pipeline.sh` | Generic pipeline — configure host and paths before running |
 | `03_example_pig_virome.sh` | Example run with pig serum virome (SRR38194065) |
+| `04_diversity_analysis.R` | Alpha and beta diversity analysis for multi-sample viromes |
 
 ### Requirements
 
